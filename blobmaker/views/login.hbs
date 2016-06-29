@@ -1,0 +1,20 @@
+<script src="../javascripts/loginvalidate.js"></script>
+<div>
+	Please log in to see yr personal gallery!
+</div>
+</br></br>
+
+<form action ="/login" method="post" id="blobForm" onsubmit="return check()">
+	Your username:
+	<input type="text" id="user" name="user" value="{{newuser}}"><br/><br/>
+	Are you sure this is you? <br/>
+	<input type="radio" name="sureness" value="Yes"> Yes! <br>
+	<input type="radio" name="sureness" value="No"> No! <br>
+	
+	<div id='warning'></div>
+	<input type=submit value="Jack into the net!" id="login">
+	<br/>
+</form>
+
+</br></br>
+<div id=security>Here at Blobmaker, web security is our passion</div>

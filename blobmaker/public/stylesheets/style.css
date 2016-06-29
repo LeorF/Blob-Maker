@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#error{
+	color: #FF0000;
+}
+
+img{
+	display: block;
+	border: solid;
+}
+
+#security{
+	font-size: 10px;
+}
+
+#warning{
+	color: red;
+}

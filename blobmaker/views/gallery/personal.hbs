@@ -1,0 +1,18 @@
+<h1>View all yr {{user.blobNum}} blobs!</h1>
+<!--{{blobpics}}-->
+{{#if blobpics}}
+	<form action="/display" method="post">
+		{{#each blobs}}
+			
+			<input type="radio" name="toDisplay" value="{{this.id}}">
+			
+			<div class="encodedImage">{{this.pic}}</div> </br>
+				
+		{{/each}}
+		<input type="submit" value="Display this blob on its own!">
+	</form>
+{{else}}
+	<div>Psych! You don't have any blobs! Go make some!</div><br/>
+{{/if}}
+
+<script src="../javascripts/decode.js"></script>

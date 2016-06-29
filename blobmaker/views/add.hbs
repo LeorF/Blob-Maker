@@ -1,0 +1,39 @@
+<h1>What's yr stats???</h1>
+<script src="javascripts/validate.js"></script>
+<script src="javascripts/ajax.js"></script>
+<script src="blobber/libraries/p5.js" type="text/javascript"></script>
+<script src="blobber/libraries/p5.dom.js" type="text/javascript"></script>
+<script src="blobber/sketch.js" type="text/javascript"></script>
+<div id="error"></div>
+</br>
+<form action ="" method="post" id="blobForm" onsubmit="return validate()">
+	Your name:
+	<input type="text" id="creator" value="{{user}}"><br>
+	Blob name:
+	<input type="text" id="name"><br>
+	Height in pixels (between 50 and 250):
+	<input type="number" id="height"><br>
+	Blob color:
+	<input type="color" id="blobcolor"><br>
+	Pants rise:
+	<select id="pantsrise">
+		<option value="saggy">Saggy</option>
+		<option value="low-rise">Low-rise</option>
+		<option value="medium">Medium</option>
+		<option value="high-waisted">High-waisted</option>
+		<option value="armpit-height">Armpit-height</option>
+	</select> <br>
+	Blobbiness:
+	<select id="blobbiness">
+		<option value="not-very">Not very</option>
+		<option value="pretty-blobby">Pretty blobby</option>
+		<option value="hella">HELLA</option>
+	</select><br>
+	<button type="button" id="makeButton">Make!</button>
+</form>
+
+<div id='canvas'></div>
+
+<button type="button" id="saveButton" disabled>Save!</button>
+
+<br>

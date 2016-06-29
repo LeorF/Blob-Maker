@@ -1,0 +1,13 @@
+{{#if user}}
+	<h1>Hello, {{user}}!</h1>
+{{/if}}
+<h1>View all {{gallery.blobNum}} blobs!</h1>
+
+{{#each blob}}
+		{{name}}, created by {{creator}}
+		<div class="encodedImage">{{pic}}</div> </br>
+		
+{{/each}}
+
+
+<script src="../javascripts/decode.js"></script>
